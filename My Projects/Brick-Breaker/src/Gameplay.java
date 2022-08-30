@@ -62,7 +62,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
         g.setColor(Color.yellow);
         g.fillOval(ballposX, ballposY, 20, 20);
 
-        // when you won the game
+        //  when you won the game
         if(totalBricks <= 0)
         {
             play = false;
