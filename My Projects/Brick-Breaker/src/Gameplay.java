@@ -206,7 +206,6 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
                             {
                                 ballYdir = -ballYdir;
                             }
-
                             break A;
                         }
                     }
