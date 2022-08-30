@@ -14,5 +14,4 @@ public class BrickBrakerStartGame {
         obj.setVisible(true);
 
     }
-
 }

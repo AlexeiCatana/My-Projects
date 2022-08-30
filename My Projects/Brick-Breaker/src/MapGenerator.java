@@ -4,7 +4,7 @@ import java.awt.Graphics2D;
 
 public class MapGenerator {
 
-    public int map[][];
+    public int[][] map;
     public int brickWidth;
     public int brickHeight;
 
@@ -43,7 +43,7 @@ public class MapGenerator {
         }
     }
 
-    public void setBrickValue(int value, int row, int col)
+    public void setBrickValue (int value, int row, int col)
     {
         map[row][col] = value;
     }

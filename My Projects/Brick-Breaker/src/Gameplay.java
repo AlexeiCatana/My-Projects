@@ -189,16 +189,15 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
 
                         Rectangle rect = new Rectangle(brickX, brickY, brickWidth, brickHeight);
                         Rectangle ballRect = new Rectangle(ballposX, ballposY, 20, 20);
-                        Rectangle brickRect = rect;
 
-                        if(ballRect.intersects(brickRect))
+                        if(ballRect.intersects(rect))
                         {
                             map.setBrickValue(0, i, j);
                             score+=5;
                             totalBricks--;
 
                             // when ball hit right or left of brick
-                            if(ballposX + 19 <= brickRect.x || ballposX + 1 >= brickRect.x + brickRect.width)
+                            if(ballposX + 19 <= rect.x || ballposX + 1 >= rect.x + rect.width)
                             {
                                 ballXdir = -ballXdir;
                             }
@@ -229,7 +228,6 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
             {
                 ballXdir = -ballXdir;
             }
-
             repaint();
         }
     }
